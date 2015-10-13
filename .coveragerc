@@ -1,0 +1,10 @@
+# .coveragerc to control coverage.py
+[run]
+source = texsite
+branch = True
+
+[report]
+ignore_errors = True
+
+[html]
+directory = htmlcov

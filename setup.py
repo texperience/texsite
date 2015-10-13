@@ -2,6 +2,13 @@ import os
 from setuptools import setup, find_packages
 from texsite import __version__
 
+# Hard linking doesn't work inside VirtualBox shared folders. This means that you can't use tox in a directory that is
+# being shared with Vagrant, since tox relies on `python setup.py sdist` which uses hard links. As a workaround, disable
+# hard-linking if setup.py is a descendant of /vagrant. See
+# https://stackoverflow.com/questions/7719380/python-setup-py-sdist-error-operation-not-permitted for more details.
+if 'vagrant' in os.path.abspath(__file__).split(os.path.sep):
+    del os.link
+
 with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
     README = readme.read()
 
@@ -11,7 +18,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 setup(
     name='texsite',
     version=__version__,
-    packages=find_packages(),
+    packages=find_packages(exclude=['tests']),
     include_package_data=True,
     license='ISC License (ISCL)',
     description='texsite is a modern web content management system. It is written in Python and built on Wagtail CMS, '

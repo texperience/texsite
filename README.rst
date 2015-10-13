@@ -1,6 +1,12 @@
 Welcome to texsite
 ==================
 
+.. image:: https://img.shields.io/travis/texperience/texsite.svg?branch=master
+    :target: https://travis-ci.org/texperience/texsite
+
+.. image:: https://img.shields.io/coveralls/texperience/texsite/master.svg
+    :target: https://coveralls.io/r/texperience/texsite?branch=master
+
 .. image:: https://img.shields.io/badge/version-v0.1.0-blue.svg
 
 .. image:: https://img.shields.io/badge/license-ISC%20License%20(ISCL)-blue.svg

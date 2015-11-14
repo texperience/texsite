@@ -28,6 +28,7 @@ setup(
     author='Timo Rieber',
     author_email='trieber@texperience.de',
     install_requires=[
+        'django-bootstrap-ui>=0.1,<0.2',
         'wagtail>=1.2,<1.3',
     ],
     classifiers=[

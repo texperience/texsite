@@ -6,7 +6,11 @@ DATABASES = {
 }
 INSTALLED_APPS = [
     # texsite apps
+    'texsite.bootstrap',
     'texsite.core',
+
+    # texperience apps
+    'bootstrap_ui',
 
     # Wagtail apps
     'wagtail.wagtailcore',

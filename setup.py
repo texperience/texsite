@@ -26,8 +26,10 @@ setup(
     long_description=README,
     url='https://github.com/texperience/texsite',
     author='Timo Rieber',
-    author_email='dev@timorieber.de',
-    install_requires=[],
+    author_email='trieber@texperience.de',
+    install_requires=[
+        'wagtail>=1.2,<1.3',
+    ],
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Environment :: Web Environment',

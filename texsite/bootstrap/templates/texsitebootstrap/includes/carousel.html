@@ -1,0 +1,37 @@
+{% load i18n %}
+
+{% if carousel_items.count > 0 or single_image %}
+    <div id="texsite-carousel" class="carousel slide" data-ride="carousel">
+        {% if carousel_items.count > 1 and not single_image %}
+            <!-- Indicators -->
+            <ol class="carousel-indicators hidden-sm hidden-xs">
+                {% for carousel_item in carousel_items %}
+                    <li data-target="#texsite-carousel" data-slide-to="{{ carousel_item.sort_order }}"{% if carousel_item.sort_order == 0 %} class="active"{% endif %}></li>
+                {% endfor %}
+            </ol>
+        {% endif %}
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            {% if single_image %}
+                {% include "texsitebootstrap/includes/carousel_item.html" with image=single_image caption=caption active="1" only %}
+            {% else %}
+                {% for carousel_item in carousel_items %}
+                    {% include "texsitebootstrap/includes/carousel_item.html" with image=carousel_item.image caption=carousel_item.image.title active=carousel_item.sort_order|yesno:"0,1" only %}
+                {% endfor %}
+            {% endif %}
+        </div>
+
+        {% if carousel_items.count > 1 and not single_image %}
+            <!-- Controls -->
+            <a class="left carousel-control hidden-xs" href="#xperience-carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">{% trans "Previous" %}</span>
+            </a>
+            <a class="right carousel-control hidden-xs" href="#xperience-carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">{% trans "Next" %}</span>
+            </a>
+        {% endif %}
+    </div>
+{% endif %}

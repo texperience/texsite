@@ -1,0 +1,47 @@
+{% extends "bootstrap_ui/bootstrap-skeleton.html" %}
+
+{% load bootstrap_ui_tags %}
+{% load i18n %}
+{% load static %}
+
+{% block head-css %}
+    {{ block.super }}
+
+    <link href="{% static "css/clean-blog.min.css" %}" media="screen" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block body-content %}
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header page-scroll">
+                <a class="navbar-brand" href="#">{{ request.site.root_page.title }}</a>
+            </div>
+        </div>
+    </nav>
+
+    {% block clean-blog-body-content %}{% endblock %}
+
+    <hr>
+
+    <footer>
+        {% container %}
+            {% row %}
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p class="copyright text-muted">{% trans "Copyright ©" %} {{ request.site.root_page.title }} {% now "Y" %}</p>
+                </div>
+            {% endrow %}
+        {% endcontainer %}
+    </footer>
+{% endblock %}
+
+{% block head-title %}
+    {{ page.title }} | {{ request.site.root_page.title }}
+{% endblock %}
+
+{% block body-javascript %}
+    {{ block.super }}
+
+    <script src="{% static "js/clean-blog.min.js" %}" type="text/javascript"></script>
+{% endblock %}

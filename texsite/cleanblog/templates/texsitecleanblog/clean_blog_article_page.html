@@ -1,0 +1,24 @@
+{% extends "texsitecleanblog/base.html" %}
+
+{% block clean-blog-body-content %}
+    {{ block.super }}
+
+    {% for block in page.body %}
+        {% if block.block_type == "intro" %}
+            {% include "texsitecleanblog/blocks/intro.html" with block=block page=page %}
+            <article>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        {% else %}
+            {{ block }}
+        {% endif %}
+
+        {% if forloop.last %}
+                        </div>
+                    </div>
+                </div>
+            </article>
+        {% endif %}
+    {% endfor %}
+{% endblock %}

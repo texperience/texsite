@@ -12,6 +12,14 @@ class HeadingBlock(StructBlock):
         icon = 'placeholder'
 
 
+class ImageBlock(StructBlock):
+    image = ImageChooserBlock(required=True)
+    caption = CharBlock(required=False)
+
+    class Meta:
+        icon = 'image'
+
+
 class IntroBlock(StructBlock):
     keyvisual = ImageChooserBlock(required=False)
     slogan = CharBlock(required=True)
@@ -25,4 +33,4 @@ class QuoteBlock(StructBlock):
     originator = CharBlock(required=False)
 
     class Meta:
-        icon = 'placeholder'
+        icon = 'openquote'

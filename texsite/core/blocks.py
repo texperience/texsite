@@ -1,7 +1,15 @@
 # -*- coding: utf-8 -*-
 
-from wagtail.wagtailcore.blocks import CharBlock, RichTextBlock, StreamBlock, StructBlock
+from wagtail.wagtailcore.blocks import CharBlock, RichTextBlock, StreamBlock, StructBlock, TextBlock
 from wagtail.wagtailimages.blocks import ImageChooserBlock
+
+
+class HeadingBlock(StructBlock):
+    title = CharBlock(required=True)
+    subtitle = CharBlock(required=False)
+
+    class Meta:
+        icon = 'placeholder'
 
 
 class IntroBlock(StructBlock):
@@ -12,9 +20,9 @@ class IntroBlock(StructBlock):
         icon = 'placeholder'
 
 
-class HeadingBlock(StructBlock):
-    title = CharBlock(required=True)
-    subtitle = CharBlock(required=False)
+class QuoteBlock(StructBlock):
+    quote = TextBlock(required=True)
+    originator = CharBlock(required=False)
 
     class Meta:
         icon = 'placeholder'

@@ -8,7 +8,7 @@ from wagtail.wagtailcore.blocks import RichTextBlock
 from wagtail.wagtailimages.blocks import ImageChooserBlock
 
 from texsite.core.models import BasePage
-from texsite.core.blocks import HeadingBlock, IntroBlock
+from texsite.core.blocks import HeadingBlock, IntroBlock, QuoteBlock
 
 
 class CleanBlogArticlePage(BasePage):
@@ -19,6 +19,7 @@ class CleanBlogArticlePage(BasePage):
         ('heading', HeadingBlock(template="texsitecleanblog/blocks/heading.html")),
         ('paragraph', RichTextBlock()),
         ('image', ImageChooserBlock(template="texsitecleanblog/blocks/image.html")),
+        ('quote', QuoteBlock(template="texsitecleanblog/blocks/quote.html")),
     ])
 
     # Editor interface configuration

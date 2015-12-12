@@ -1,3 +1,7 @@
 {% load wagtailimages_tags %}
 
-{% image value width-750 class="img-responsive" %}
+{% image value.image width-750 class="img-responsive" %}
+
+{% if value.caption %}
+    <span class="caption text-muted">{{ value.caption }}</span>
+{% endif %}

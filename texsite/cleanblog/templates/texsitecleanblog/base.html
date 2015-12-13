@@ -16,7 +16,7 @@
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header page-scroll">
-                <a class="navbar-brand" href="#">{{ request.site.root_page.title }}</a>
+                <a class="navbar-brand" href="/">{{ request.site.root_page.title }}</a>
             </div>
         </div>
     </nav>
@@ -37,7 +37,7 @@
 {% endblock %}
 
 {% block head-title %}
-    {{ page.title }} | {{ request.site.root_page.title }}
+    {{ page.title }}{% if page.id != request.site.root_page.id %} | {{ request.site.root_page.title }}{% endif %}
 {% endblock %}
 
 {% block body-javascript %}

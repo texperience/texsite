@@ -25,7 +25,7 @@ matrix:
 
 # Package installation
 install:
-  - pip install tox coveralls
+  - pip install tox coveralls wheel
 
 # Run tests
 script:
@@ -34,3 +34,14 @@ script:
 # Call subsequent services
 after_success:
   - coveralls
+
+# Automate deployment after success
+deploy:
+  provider: pypi
+  user: texperience
+  password:
+    secure: "jRNw546R/nD/5ZiVESmYg3dUKvScUAbLsmpVNZxbNz9GTfTf5m3TwVFEKdX7eBbT5y/QJEvw86tRrBcWpWdnk6UQ+lWlr003GiuiPp0bME4WFj7lLWwEt/JsVV2iN5U1fmXWyPbTTKhtzjQoIL0bvqT2cz0qgASo/sPZnP3b5HlYelZgo1XOvA7vJrQUyLD0Deb+4r6VSofpMsQgifOvZjwZiAAyTo4OYMb29HekucKBBJLJTf/+JrUY5I2AEKvNqf7BUhfqF/6t3XFWqzwUAdqXLSLqQcAvSs7Xd+En4gr8W1oXhAV95Z/gfV6QNiEwoxQvuK4d8vJYDUn8NKMYm2OSE/MY/VlA9xZve9W1uSkU+fwsexP/p2usD1OriEHNE+GNcp1i/KnvKTMVsCigHyafArvNO1US9qSoNGFekLf1QA5RfjvrFUievD1ETWqxYyVWDcO3ZItsOYwFGNcAA07NK/k9+NK36/qId4k6kGTOpv/wproo+ZV2lQkDZMInMLRIfUaxWSGkEafpoVyqqF8p3le0b00tX+VNGRFia1sumqk0WtbBxLgbvrHh3+B+rPtITvxA9nRmkhiBLXSWKAkG9e9G6U5Zm8q7nT74rx1QmDpFtNccGurm8dM9UQNEwS1IaSDRzONtMzj/4A0DXmSOI8X+Uz8Jm8TrKYvqW2k="
+  on:
+    tags: true
+    repo: texperience/texsite
+  distributions: sdist bdist_wheel

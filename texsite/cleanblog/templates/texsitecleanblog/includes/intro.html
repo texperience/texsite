@@ -2,16 +2,16 @@
 {% load i18n %}
 {% load wagtailimages_tags %}
 
-{% image block.value.keyvisual width-1920 as keyvisual %}
+{% image image width-1920 as keyvisual %}
 
 <header class="intro-header" style="background-image: url('{{ keyvisual.url }}')">
     {% container %}
         {% row %}
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>{{ page.title }}</h1>
-                    <h2 class="subheading">{{ block.value.slogan }}</h2>
-                    <span class="meta">{% trans "Posted by" %} {{ page.owner }} {% trans "on" %} {{ page.first_published_at|date:"SHORT_DATETIME_FORMAT" }}</span>
+                    <h1>{{ title }}</h1>
+                    <h2 class="subheading">{{ slogan }}</h2>
+                    <span class="meta">{% trans "Posted by" %} {{ author }} {% trans "on" %} {{ published_at|date:"SHORT_DATETIME_FORMAT" }}</span>
                 </div>
             </div>
         {% endrow %}

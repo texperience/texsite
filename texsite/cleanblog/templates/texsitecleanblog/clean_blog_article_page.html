@@ -5,7 +5,7 @@
 
     {% for block in page.body %}
         {% if block.block_type == "intro" %}
-            {% include "texsitecleanblog/blocks/intro.html" with block=block page=page %}
+            {% include "texsitecleanblog/includes/intro.html" with image=block.value.keyvisual title=page.title slogan=block.value.slogan author=page.owner published_at=page.first_published_at only %}
             <article>
                 <div class="container">
                     <div class="row">

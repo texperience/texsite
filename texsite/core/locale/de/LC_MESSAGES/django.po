@@ -1,0 +1,15 @@
+# German language file
+msgid ""
+msgstr ""
+"Project-Id-Version: texsite\n"
+"POT-Creation-Date: 2015-12-13 20:50+0000\n"
+"Last-Translator: Timo Rieber <trieber@texperience.de>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: models.py:23
+msgid "Base Page"
+msgstr "Basis Seite"

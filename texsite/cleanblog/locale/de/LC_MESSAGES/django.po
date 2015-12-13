@@ -1,0 +1,57 @@
+# German language file
+msgid ""
+msgstr ""
+"Project-Id-Version: texsite\n"
+"POT-Creation-Date: 2015-12-13 20:50+0000\n"
+"Last-Translator: Timo Rieber <trieber@texperience.de>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: texsite/cleanblog/models.py:31
+msgid "Clean Blog Article Page"
+msgstr "Clean Blog Artikel Seite"
+
+#: texsite/cleanblog/models.py:73
+msgid "Clean Blog Article Index Page"
+msgstr "Clean Blog Artikel Übersicht"
+
+#: texsite/cleanblog/templates/texsitecleanblog/base.html:32
+msgid "Copyright ©"
+msgstr ""
+
+#: texsite/cleanblog/templates/texsitecleanblog/clean_blog_article_index_page.html:32
+#: texsite/cleanblog/templates/texsitecleanblog/includes/intro.html:21
+msgid "Posted by"
+msgstr "Geschrieben von"
+
+#: texsite/cleanblog/templates/texsitecleanblog/clean_blog_article_index_page.html:32
+#: texsite/cleanblog/templates/texsitecleanblog/includes/intro.html:21
+msgid "on"
+msgstr "am"
+
+#: texsite/cleanblog/templates/texsitecleanblog/clean_blog_article_index_page.html:38
+msgid "No entries found"
+msgstr "Keine Einträge gefunden"
+
+#: texsite/cleanblog/templates/texsitecleanblog/includes/navigator.html:6
+msgid "Back to overview"
+msgstr "Zurück zur Übersicht"
+
+#: texsite/cleanblog/templates/texsitecleanblog/includes/navigator.html:10
+msgid "Previous post"
+msgstr "Vorheriger Artikel"
+
+#: texsite/cleanblog/templates/texsitecleanblog/includes/navigator.html:15
+msgid "Next post"
+msgstr "Nächster Artikel"
+
+#: texsite/cleanblog/templates/texsitecleanblog/includes/paginator.html:7
+msgid "Next posts"
+msgstr "Nächste Artikel"
+
+#: texsite/cleanblog/templates/texsitecleanblog/includes/paginator.html:14
+msgid "Previous posts"
+msgstr "Vorherige Artikel"

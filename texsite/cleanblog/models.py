@@ -40,8 +40,8 @@ class CleanBlogArticleIndexPage(BasePage):
 
     @property
     def articles(self):
-        # Get list of live article pages that are descendants of this page and order by most recent date first
-        return CleanBlogArticlePage.objects.live().descendant_of(self).order_by("-first_published_at")
+        # Get list of live article pages that are descendants of this page by sort order
+        return CleanBlogArticlePage.objects.live().descendant_of(self).order_by("path")
 
     def get_context(self, request):
         # Get articles

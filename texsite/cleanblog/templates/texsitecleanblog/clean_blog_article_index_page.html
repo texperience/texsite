@@ -1,0 +1,58 @@
+{% extends "texsitecleanblog/base.html" %}
+
+{% load bootstrap_ui_tags %}
+{% load i18n %}
+
+{% block clean-blog-body-content %}
+    {{ block.super }}
+
+    {% for block in page.body %}
+        {% if block.block_type == "intro" %}
+            {% include "texsitecleanblog/includes/intro.html" with type=page.content_type.model image=block.value.keyvisual title=page.title slogan=block.value.slogan only %}
+        {% endif %}
+    {% endfor %}
+
+    {% container %}
+        {% row %}
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                {% for article in articles %}
+                    <div class="post-preview">
+                        <a href="{{ article.url }}">
+                            <h2 class="post-title">
+                                {{ article.title }}
+                            </h2>
+                            <h3 class="post-subtitle">
+                                {% for block in article.specific.body %}
+                                    {% if block.block_type == "intro" %}
+                                        {{ block.value.slogan }}
+                                    {% endif %}
+                                {% endfor %}
+                            </h3>
+                        </a>
+                        <p class="post-meta">{% trans "Posted by" %} {{ page.owner }} {% trans "on" %} {{ page.first_published_at|date:"SHORT_DATETIME_FORMAT" }}</p>
+                    </div>
+                    {% if articles.has_other_pages or not forloop.last %}
+                        <hr>
+                    {% endif %}
+                    {% if articles.has_other_pages and forloop.last %}
+                        <!-- Pager -->
+                        <ul class="pager">
+                            {% if articles.has_previous %}
+                                <li class="previous">
+                                    <a href="?page={{ articles.previous_page_number }}"><i class="fa fa-arrow-left"></i> {% trans "Newer posts" %}</a>
+                                </li>
+                            {% endif %}
+                            {% if articles.has_next  %}
+                                <li class="next">
+                                    <a href="?page={{ articles.next_page_number }}">{% trans "Older posts" %} <i class="fa fa-arrow-right"></i></a>
+                                </li>
+                            {% endif %}
+                        </ul>
+                    {% endif %}
+                {% empty %}
+                    {% trans "No entries found" %}
+                {% endfor %}
+            </div>
+        {% endrow %}
+    {% endcontainer %}
+{% endblock %}

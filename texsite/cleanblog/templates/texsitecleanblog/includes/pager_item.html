@@ -1,0 +1,13 @@
+<li class="{{ type }}">
+    <a href="{{ link }}"{% if title %} title="{{ title }}"{% endif %}>
+        {% if icon_position == "left" %}
+            {% include "texsitecleanblog/includes/icon.html" with icon=icon only %}
+            {{ label }}
+        {% elif icon_position == "right" %}
+            {{ label }}
+            {% include "texsitecleanblog/includes/icon.html" with icon=icon only %}
+        {% else %}
+            {{ label }}
+        {% endif %}
+    </a>
+</li>

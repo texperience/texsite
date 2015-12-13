@@ -34,24 +34,13 @@
                     {% if articles.has_other_pages or not forloop.last %}
                         <hr>
                     {% endif %}
-                    {% if articles.has_other_pages and forloop.last %}
-                        <!-- Pager -->
-                        <ul class="pager">
-                            {% if articles.has_previous %}
-                                <li class="previous">
-                                    <a href="?page={{ articles.previous_page_number }}"><i class="fa fa-arrow-left"></i> {% trans "Newer posts" %}</a>
-                                </li>
-                            {% endif %}
-                            {% if articles.has_next  %}
-                                <li class="next">
-                                    <a href="?page={{ articles.next_page_number }}">{% trans "Older posts" %} <i class="fa fa-arrow-right"></i></a>
-                                </li>
-                            {% endif %}
-                        </ul>
-                    {% endif %}
                 {% empty %}
                     {% trans "No entries found" %}
                 {% endfor %}
+
+                {% if articles.has_other_pages %}
+                    {% include "texsitecleanblog/includes/paginator.html" with items=articles only %}
+                {% endif %}
             </div>
         {% endrow %}
     {% endcontainer %}

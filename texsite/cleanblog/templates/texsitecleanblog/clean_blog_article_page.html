@@ -19,23 +19,7 @@
         {% if forloop.last %}
                             <hr>
 
-                            <!-- Pager -->
-                            <ul class="pager">
-                                <li class="previous">
-                                    <a href="{{ page.get_parent.url }}" title="{{ page.get_parent.title }}"><i class="fa fa-arrow-up"></i> {% trans "Back to overview" %}</a>
-                                </li>
-
-                                {% if page.next_sibling %}
-                                    <li class="next">
-                                        <a href="{{ page.next_sibling.url }}" title="{{ page.next_sibling.title }}">{% trans "Previous post" %} <i class="fa fa-arrow-right"></i></a>
-                                    </li>
-                                {% endif %}
-                                {% if page.previous_sibling %}
-                                    <li class="next">
-                                        <a href="{{ page.previous_sibling.url }}" title="{{ page.previous_sibling.title }}"><i class="fa fa-arrow-left"></i> {% trans "Next post" %}</a>
-                                    </li>
-                                {% endif %}
-                            </ul>
+                            {% include "texsitecleanblog/includes/navigator.html" with backlink=page.get_parent.url backtitle=page.get_parent.title nextlink=page.next_sibling.url nexttitle=page.next_sibling.title previouslink=page.previous_sibling.url previoustitle=page.previous_sibling.title only %}
                         </div>
                     </div>
                 </div>

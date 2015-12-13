@@ -1,0 +1,19 @@
+{% extends "texsitecleanblog/includes/pager.html" %}
+
+{% load i18n %}
+
+{% block clean-blog-pager-body %}
+    {% if items.has_previous %}
+        {% trans "Next posts" as label %}
+        {% with page_number=items.previous_page_number|stringformat:"s" %}
+            {% include "texsitecleanblog/includes/pager_item.html" with type="previous" link="?page="|add:page_number title=items.previous_page_number.object_list.0.title icon="fa-arrow-left" icon_position="left" label=label only %}
+        {% endwith %}
+    {% endif %}
+
+    {% if items.has_next %}
+        {% trans "Previous posts" as label %}
+        {% with page_number=items.next_page_number|stringformat:"s" %}
+            {% include "texsitecleanblog/includes/pager_item.html" with type="next" link="?page="|add:page_number title=items.next_page_number.object_list.0.title icon="fa-arrow-right" icon_position="right" label=label only %}
+        {% endwith %}
+    {% endif %}
+{% endblock %}

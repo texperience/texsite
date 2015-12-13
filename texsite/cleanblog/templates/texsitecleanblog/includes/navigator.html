@@ -1,0 +1,18 @@
+{% extends "texsitecleanblog/includes/pager.html" %}
+
+{% load i18n %}
+
+{% block clean-blog-pager-body %}
+    {% trans "Back to overview" as label %}
+    {% include "texsitecleanblog/includes/pager_item.html" with type="previous" link=backlink title=backtitle icon="fa-arrow-up" icon_position="left" label=label only %}
+
+    {% if nextlink %}
+        {% trans "Previous post" as label %}
+        {% include "texsitecleanblog/includes/pager_item.html" with type="next" link=nextlink title=nexttitle icon="fa-arrow-right" icon_position="right" label=label only %}
+    {% endif %}
+
+    {% if previouslink %}
+        {% trans "Next post" as label %}
+        {% include "texsitecleanblog/includes/pager_item.html" with type="next" link=previouslink title=previoustitle icon="fa-arrow-left" icon_position="left" label=label only %}
+    {% endif %}
+{% endblock %}

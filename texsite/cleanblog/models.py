@@ -64,7 +64,7 @@ class CleanBlogArticleIndexPage(BasePage):
 
         return context
 
-     # Editor interface configuration
+    # Editor interface configuration
     content_panels = BasePage.content_panels + [
         StreamFieldPanel('body'),
     ]

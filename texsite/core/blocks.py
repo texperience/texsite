@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from wagtail.wagtailcore.blocks import CharBlock, RichTextBlock, StreamBlock, StructBlock, TextBlock
+from wagtail.wagtailcore.blocks import CharBlock, StructBlock, TextBlock
 from wagtail.wagtailimages.blocks import ImageChooserBlock
 
 

@@ -7,9 +7,10 @@ Welcome to texsite
 .. image:: https://img.shields.io/coveralls/texperience/texsite/master.svg
     :target: https://coveralls.io/r/texperience/texsite?branch=master
 
-.. image:: https://img.shields.io/badge/version-v0.1.0-blue.svg
+.. image:: https://img.shields.io/pypi/v/texsite.svg
+    :target: https://pypi.python.org/pypi/texsite
 
-.. image:: https://img.shields.io/badge/license-ISC%20License%20(ISCL)-blue.svg
+.. image:: https://img.shields.io/pypi/l/texsite.svg
     :target: http://en.wikipedia.org/wiki/ISC_license
 
 texsite is a modern web content management system. It is written in `Python`_ and built on `Wagtail CMS`_, which is backed by the `Django web framework`_.

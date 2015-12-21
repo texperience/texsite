@@ -12,6 +12,10 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
 {% endblock %}
 
+{% block head-title %}
+    {{ page.title }}{% if page.id != request.site.root_page.id %} | {{ request.site.root_page.title }}{% endif %}
+{% endblock %}
+
 {% block body-content %}
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container-fluid">
@@ -34,10 +38,6 @@
             {% endrow %}
         {% endcontainer %}
     </footer>
-{% endblock %}
-
-{% block head-title %}
-    {{ page.title }}{% if page.id != request.site.root_page.id %} | {{ request.site.root_page.title }}{% endif %}
 {% endblock %}
 
 {% block body-javascript %}

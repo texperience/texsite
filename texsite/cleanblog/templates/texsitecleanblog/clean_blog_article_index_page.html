@@ -4,8 +4,6 @@
 {% load i18n %}
 
 {% block clean-blog-body-content %}
-    {{ block.super }}
-
     {% for block in page.body %}
         {% if block.block_type == "intro" %}
             {% include "texsitecleanblog/includes/intro.html" with type=page.content_type.model image=block.value.keyvisual title=page.title slogan=block.value.slogan only %}

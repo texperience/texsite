@@ -12,7 +12,7 @@ msgstr ""
 
 #: models.py:30
 msgid "Article Page"
-msgstr "Atikel Seite"
+msgstr "Artikel Seite"
 
 #: templates/texsitebootstrap/article_page.html:10
 msgid "Posted by"

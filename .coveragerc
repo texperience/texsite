@@ -2,6 +2,7 @@
 [run]
 source = texsite
 branch = True
+omit = */migrations/*
 
 [report]
 ignore_errors = True

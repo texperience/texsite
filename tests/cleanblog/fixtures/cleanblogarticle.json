@@ -1,0 +1,85 @@
+[
+{
+    "pk": 3,
+    "model": "wagtailcore.page",
+    "fields": {
+        "title": "Article page",
+        "numchild": 0,
+        "show_in_menus": false,
+        "live": true,
+        "seo_title": "",
+        "depth": 3,
+        "search_description": "",
+        "content_type": [
+            "texsitecleanblog",
+            "cleanblogarticlepage"
+        ],
+        "has_unpublished_changes": false,
+        "owner": null,
+        "path": "000100010001",
+        "url_path": "/article-index-page/article-page/",
+        "slug": "article-page"
+    }
+},
+{
+    "pk": 3,
+    "model": "texsitecore.basepage",
+    "fields": {
+        "content_type": [
+            "texsitecore",
+            "basepage"
+        ]
+    }
+},
+{
+    "pk": 3,
+    "model": "texsitecleanblog.cleanblogarticlepage",
+    "fields": {
+        "content_type": [
+            "texsitecleanblog",
+            "cleanblogarticlepage"
+        ]
+    }
+},{
+    "pk": 4,
+    "model": "wagtailcore.page",
+    "fields": {
+        "title": "Article page two",
+        "numchild": 0,
+        "show_in_menus": false,
+        "live": true,
+        "seo_title": "",
+        "depth": 3,
+        "search_description": "",
+        "content_type": [
+            "texsitecleanblog",
+            "cleanblogarticlepage"
+        ],
+        "has_unpublished_changes": false,
+        "owner": null,
+        "path": "000100010002",
+        "url_path": "/article-index-page/article-page-two/",
+        "slug": "article-page-two"
+    }
+},
+{
+    "pk": 4,
+    "model": "texsitecore.basepage",
+    "fields": {
+        "content_type": [
+            "texsitecore",
+            "basepage"
+        ]
+    }
+},
+{
+    "pk": 4,
+    "model": "texsitecleanblog.cleanblogarticlepage",
+    "fields": {
+        "content_type": [
+            "texsitecleanblog",
+            "cleanblogarticlepage"
+        ]
+    }
+}
+]

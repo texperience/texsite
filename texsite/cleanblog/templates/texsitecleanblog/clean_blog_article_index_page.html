@@ -33,7 +33,7 @@
                         <hr>
                     {% endif %}
                 {% empty %}
-                    {% trans "No entries found" %}
+                    <p>{% trans "No entries found" %}</p>
                 {% endfor %}
 
                 {% if articles.has_other_pages %}

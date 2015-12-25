@@ -1,0 +1,44 @@
+[
+{
+    "pk": 2,
+    "model": "wagtailcore.page",
+    "fields": {
+        "title": "Article index page",
+        "numchild": 1,
+        "show_in_menus": true,
+        "live": true,
+        "seo_title": "",
+        "depth": 2,
+        "search_description": "",
+        "content_type": [
+            "texsitecleanblog",
+            "cleanblogarticleindexpage"
+        ],
+        "has_unpublished_changes": false,
+        "owner": null,
+        "path": "00010001",
+        "url_path": "/article-index-page/",
+        "slug": "article-index-page"
+    }
+},
+{
+    "pk": 2,
+    "model": "texsitecore.basepage",
+    "fields": {
+        "content_type": [
+            "texsitecore",
+            "basepage"
+        ]
+    }
+},
+{
+    "pk": 2,
+    "model": "texsitecleanblog.cleanblogarticleindexpage",
+    "fields": {
+        "content_type": [
+            "texsitecleanblog",
+            "cleanblogarticleindexpage"
+        ]
+    }
+}
+]

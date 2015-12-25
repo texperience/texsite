@@ -33,7 +33,10 @@
         {% container %}
             {% row %}
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <p class="copyright text-muted">{% trans "Copyright ©" %} {{ request.site.root_page.title }} {% now "Y" %}</p>
+                    <p class="copyright text-muted">
+                        {% trans "Copyright ©" %} {{ request.site.root_page.title }} {% now "Y" %}<br>
+                        Template based on <a href="http://ironsummitmedia.github.io/startbootstrap-clean-blog/">Clean Blog</a> by Start Bootstrap
+                    </p>
                 </div>
             {% endrow %}
         {% endcontainer %}

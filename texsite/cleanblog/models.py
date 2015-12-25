@@ -16,10 +16,10 @@ class CleanBlogArticlePage(BasePage):
     # Page model fields
     body = StreamField([
         ('intro', IntroBlock()),
-        ('heading', HeadingBlock(template="texsitecleanblog/blocks/heading.html")),
+        ('heading', HeadingBlock(template='texsitecleanblog/blocks/heading.html')),
         ('paragraph', RichTextBlock()),
-        ('image', ImageBlock(template="texsitecleanblog/blocks/image.html")),
-        ('quote', QuoteBlock(template="texsitecleanblog/blocks/quote.html")),
+        ('image', ImageBlock(template='texsitecleanblog/blocks/image.html')),
+        ('quote', QuoteBlock(template='texsitecleanblog/blocks/quote.html')),
     ])
 
     # Editor interface configuration
@@ -41,14 +41,14 @@ class CleanBlogArticleIndexPage(BasePage):
     @property
     def articles(self):
         # Get list of live article pages that are descendants of this page by sort order
-        return CleanBlogArticlePage.objects.live().descendant_of(self).order_by("path")
+        return CleanBlogArticlePage.objects.live().descendant_of(self).order_by('path')
 
     def get_context(self, request):
         # Get articles
         articles = self.articles
 
         # Pagination
-        page = request.GET.get("page")
+        page = request.GET.get('page')
         paginator = Paginator(articles, 4)
 
         try:
@@ -60,7 +60,7 @@ class CleanBlogArticleIndexPage(BasePage):
 
         # Update template context
         context = super(CleanBlogArticleIndexPage, self).get_context(request)
-        context["articles"] = articles
+        context['articles'] = articles
 
         return context
 

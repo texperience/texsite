@@ -7,7 +7,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('wagtailcore', '0020_add_index_on_page_first_published_at'),
+        ('wagtailcore', '0016_change_page_url_path_to_text_field'),
     ]
 
     operations = [

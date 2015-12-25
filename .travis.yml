@@ -21,6 +21,10 @@ matrix:
     - env: TOXENV=py34-wt12
     - env: TOXENV=py35-wt12
       python: 3.5
+    - env: TOXENV=py27-wt13
+    - env: TOXENV=py34-wt13
+    - env: TOXENV=py35-wt13
+      python: 3.5
     - env: TOXENV=flake8
 
 # Package installation

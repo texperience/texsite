@@ -19,8 +19,9 @@ setup(
     packages=find_packages(exclude=['tests']),
     include_package_data=True,
     license='ISC License (ISCL)',
-    description='texsite is a modern web content management system. It is written in Python and built on Wagtail CMS, '
-                'which is backed by the Django web framework.',
+    description=
+        'texsite delivers great and ready-to-use page templates for the modern, flexible and user-focused web content'
+        'management system Wagtail CMS backed by the popular Django web framework, both written in Python.',
     long_description=open('README.rst').read(),
     url='https://github.com/texperience/texsite',
     author='Timo Rieber',

@@ -13,13 +13,23 @@ Welcome to texsite
 .. image:: https://img.shields.io/pypi/l/texsite.svg
     :target: http://en.wikipedia.org/wiki/ISC_license
 
-texsite is a modern web content management system. It is written in `Python`_ and built on `Wagtail CMS`_, which is backed by the `Django web framework`_.
+texsite delivers great and ready-to-use page templates for the modern, flexible and user-focused web content management system `Wagtail CMS`_ backed by the popular `Django web framework`_, both written in `Python`_.
+
+Based on the amazing `StreamField`_ introduced with Wagtail release 1.0, which texsite uses extensively, it has never been easier for editors to author awesome pages. Read more on how this concept works in the great blog article `Rich text fields and faster horses`_ written by Matt Westcott, lead technical developer of Wagtail.
+
+.. _Wagtail CMS: https://wagtail.io/
+.. _Django web framework: https://www.djangoproject.com/
+.. _Python: https://www.python.org/
+.. _StreamField: http://docs.wagtail.io/en/stable/topics/streamfield.html
+.. _Rich text fields and faster horses: https://torchbox.com/blog/rich-text-fields-and-faster-horses/
+
+Code and contribution
+---------------------
 
 The code is open source and released under the `ISC License (ISCL)`_. It is available on `GitHub`_ and follows the guidelines about `Semantic Versioning`_ for transparency within the release cycle and backward compatibility whenever possible.
 
-.. _Python: https://www.python.org/
-.. _Wagtail CMS: https://wagtail.io/
-.. _Django web framework: https://www.djangoproject.com/
+All contributions are welcome, whether bug reports, code contributions and reviews, documentation or feature requests.
+
 .. _ISC License (ISCL): http://en.wikipedia.org/wiki/ISC_license
 .. _Semantic Versioning: http://semver.org/
 .. _GitHub: https://github.com/texperience/texsite

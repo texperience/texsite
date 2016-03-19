@@ -23,6 +23,28 @@ Based on the amazing `StreamField`_ introduced with Wagtail release 1.0, which t
 .. _StreamField: http://docs.wagtail.io/en/stable/topics/streamfield.html
 .. _Rich text fields and faster horses: https://torchbox.com/blog/rich-text-fields-and-faster-horses/
 
+Feature list
+------------
+
+* Clean Blog Pages - based on the `Clean Blog theme`_ by Start Bootstrap
+* Outstanding test coverage
+* Continuously integrated codebase
+
+.. _Clean Blog theme: http://startbootstrap.com/template-overviews/clean-blog/
+
+Technical requirements
+----------------------
+
+Below is the list of currently supported combinations of Wagtail, Django and Python:
+
++------------+------------+------------+--------------------+
+| #          | Wagtail    | Django     | Python             |
++============+============+============+====================+
+| 1          | 1.4        | 1.8        | 2.7, 3.3, 3.4, 3.5 |
++------------+------------+------------+--------------------+
+| 2          | 1.4        | 1.9        | 2.7, 3.4, 3.5      |
++------------+------------+------------+--------------------+
+
 Code and contribution
 ---------------------
 

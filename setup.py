@@ -7,6 +7,12 @@ install_requires = [
     'wagtail>=1.4,<1.5',
 ]
 
+# Testing dependencies
+testing_extras = [
+    'coverage>=4.0.3',
+    'flake8>=2.4.1',
+]
+
 setup(
     name='texsite',
     version=__version__,
@@ -20,6 +26,9 @@ setup(
     author='Timo Rieber',
     author_email='trieber@texperience.de',
     install_requires=install_requires,
+    extras_require={
+        'testing': testing_extras,
+    },
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Environment :: Web Environment',

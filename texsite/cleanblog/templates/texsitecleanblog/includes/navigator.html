@@ -3,8 +3,10 @@
 {% load i18n %}
 
 {% block clean-blog-pager-body %}
-    {% trans "Back to overview" as label %}
-    {% include "texsitecleanblog/includes/pager_item.html" with type="previous" link=backlink title=backtitle icon="fa-arrow-up" icon_position="left" label=label only %}
+    {% if backlink %}
+        {% trans "Back to overview" as label %}
+        {% include "texsitecleanblog/includes/pager_item.html" with type="previous" link=backlink title=backtitle icon="fa-arrow-up" icon_position="left" label=label only %}
+    {% endif %}
 
     {% if nextlink %}
         {% trans "Previous post" as label %}

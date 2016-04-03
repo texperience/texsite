@@ -24,9 +24,12 @@
                         {% endif %}
                     {% endfor %}
 
-                    <hr>
+                    {% if page.get_parent.url or page.next_sibling or page.previous_sibling %}
+                        <hr>
 
-                    {% include "texsitecleanblog/includes/navigator.html" with backlink=page.get_parent.url backtitle=page.get_parent.title nextlink=page.next_sibling.url nexttitle=page.next_sibling.title previouslink=page.previous_sibling.url previoustitle=page.previous_sibling.title only %}
+                        {% include "texsitecleanblog/includes/navigator.html" with backlink=page.get_parent.url backtitle=page.get_parent.title nextlink=page.next_sibling.url nexttitle=page.next_sibling.title previouslink=page.previous_sibling.url previoustitle=page.previous_sibling.title only %}
+                    {% endif %}
+
                 </div>
             {% endrow %}
         {% endcontainer %}

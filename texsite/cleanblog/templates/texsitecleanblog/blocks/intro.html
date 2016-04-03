@@ -18,7 +18,7 @@
                     <h2 class="subheading">{{ value.slogan }}</h2>
 
                     {% if page.content_type.model == "cleanblogarticlepage" %}
-                        <span class="meta">{% trans "Posted by" %} {{ page.owner }} {% trans "on" %} {{ page.first_published_at|date:"SHORT_DATETIME_FORMAT" }}</span>
+                        <span class="meta">{% include "texsitecleanblog/includes/author.html" with author=page.owner published_at=page.first_published_at only %}</span>
                     {% endif %}
                 </div>
             </div>

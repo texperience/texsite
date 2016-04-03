@@ -1,0 +1,3 @@
+{% load i18n %}
+
+{% trans "Posted by" %} {{ author.first_name|default:author|add:" "|add:author.last_name }} {% trans "on" %} {{ published_at|date:"DATE_FORMAT" }}

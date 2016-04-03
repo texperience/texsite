@@ -13,14 +13,14 @@
 {% endblock %}
 
 {% block head-title %}
-    {{ page.title }}{% if page.id != request.site.root_page.id %} | {{ request.site.root_page.title }}{% endif %}
+    {{ page.title }} | {{ request.site.site_name }}
 {% endblock %}
 
 {% block body-content %}
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header page-scroll">
-                <a class="navbar-brand" href="/">{{ request.site.root_page.title }}</a>
+                <a class="navbar-brand" href="/">{{ request.site.site_name }}</a>
             </div>
         </div>
     </nav>
@@ -34,7 +34,7 @@
             {% row %}
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <p class="copyright text-muted">
-                        {% trans "Copyright ©" %} {{ request.site.root_page.title }} {% now "Y" %}<br>
+                        {% trans "Copyright ©" %} {{ request.site.site_name }} {% now "Y" %}<br>
                         Template based on <a href="http://ironsummitmedia.github.io/startbootstrap-clean-blog/">Clean Blog</a> by Start Bootstrap
                     </p>
                 </div>

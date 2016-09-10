@@ -15,7 +15,7 @@ class CleanBlogArticlePage(BasePage):
     """Clean blog article page"""
     # Page model fields
     body = StreamField([
-        ('intro', IntroBlock()),
+        ('intro', IntroBlock(template='texsitecleanblog/blocks/intro.html')),
         ('heading', HeadingBlock(template='texsitecleanblog/blocks/heading.html')),
         ('paragraph', RichTextBlock()),
         ('image', ImageBlock(template='texsitecleanblog/blocks/image.html')),
@@ -35,7 +35,7 @@ class CleanBlogArticleIndexPage(BasePage):
     """Clean blog article index page"""
     # Page model fields
     body = StreamField([
-        ('intro', IntroBlock()),
+        ('intro', IntroBlock(template='texsitecleanblog/blocks/intro.html')),
     ])
 
     @property

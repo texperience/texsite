@@ -1,0 +1,27 @@
+{% load bootstrap_ui_tags %}
+{% load i18n %}
+{% load wagtailimages_tags %}
+
+{% image value.keyvisual width-1920 as keyvisual %}
+
+<header class="intro-header" style="background-image: url('{{ keyvisual.url }}')">
+    {% container %}
+        {% row %}
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="{% if page.content_type.model == "cleanblogarticlepage" %}post{% elif page.content_type.model == "cleanblogarticleindexpage" %}site{% endif %}-heading">
+                    <h1>{{ page.title }}</h1>
+
+                    {% if page.content_type.model == "cleanblogarticleindexpage" %}
+                        <hr class="small">
+                    {% endif %}
+
+                    <h2 class="subheading">{{ value.slogan }}</h2>
+
+                    {% if page.content_type.model == "cleanblogarticlepage" %}
+                        <span class="meta">{% trans "Posted by" %} {{ page.owner }} {% trans "on" %} {{ page.first_published_at|date:"SHORT_DATETIME_FORMAT" }}</span>
+                    {% endif %}
+                </div>
+            </div>
+        {% endrow %}
+    {% endcontainer %}
+</header>

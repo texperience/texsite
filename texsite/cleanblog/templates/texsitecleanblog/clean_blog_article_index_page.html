@@ -2,11 +2,12 @@
 
 {% load bootstrap_ui_tags %}
 {% load i18n %}
+{% load wagtailcore_tags %}
 
 {% block clean-blog-body-content %}
     {% for block in page.body %}
         {% if block.block_type == "intro" %}
-            {% include "texsitecleanblog/includes/intro.html" with type=page.content_type.model image=block.value.keyvisual title=page.title slogan=block.value.slogan only %}
+            {% include_block block %}
         {% endif %}
     {% endfor %}
 

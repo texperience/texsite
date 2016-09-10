@@ -4,7 +4,7 @@ from texsite import __version__
 # Installation dependencies
 install_requires = [
     'django-bootstrap-ui>=0.2,<0.3',
-    'wagtail>=1.4,<1.5',
+    'wagtail>=1.5,<1.6',
 ]
 
 # Testing dependencies

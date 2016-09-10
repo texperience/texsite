@@ -4,12 +4,18 @@ Changelog
 0.1.0 (xxxx-xx-xx)
 ------------------
 
+* Implemented Clean Blog app
+* Added Wagtail 1.6 support
+* Added Django 1.10 support
+* Removed Wagtail 1.2 support
+* Removed Django 1.7 support
 
 
 0.0.2 (2015-12-14)
 ------------------
 
 * Optimized automated pypi deployment
+* Added Django 1.9 support
 
 
 0.0.1 (2015-12-14)
@@ -17,3 +23,6 @@ Changelog
 
 * Initial release
 * Test automated pypi deployment
+* Added Wagtail 1.2 support
+* Added Django 1.7 support
+* Added Django 1.8 support

@@ -26,11 +26,11 @@ Based on the amazing `StreamField`_ introduced with Wagtail release 1.0, which t
 Feature list
 ------------
 
-* Clean Blog Pages - based on the `Clean Blog theme`_ by Start Bootstrap
+* Clean Blog Pages - based on the `Clean Blog`_ theme by Start Bootstrap
 * Outstanding test coverage
 * Continuously integrated codebase
 
-.. _Clean Blog theme: http://startbootstrap.com/template-overviews/clean-blog/
+.. _Clean Blog: http://startbootstrap.com/template-overviews/clean-blog/
 
 Technical requirements
 ----------------------
@@ -40,9 +40,9 @@ Below is the list of currently supported combinations of Wagtail, Django and Pyt
 +------------+------------+------------+--------------------+
 | #          | Wagtail    | Django     | Python             |
 +============+============+============+====================+
-| 1          | 1.5        | 1.8        | 2.7, 3.3, 3.4, 3.5 |
+| 1          | 1.6        | 1.8        | 2.7, 3.3, 3.4, 3.5 |
 +------------+------------+------------+--------------------+
-| 2          | 1.5        | 1.9        | 2.7, 3.4, 3.5      |
+| 2          | 1.6        | 1.9, 1.10  | 2.7, 3.4, 3.5      |
 +------------+------------+------------+--------------------+
 
 Code and contribution

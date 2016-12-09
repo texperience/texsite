@@ -5,6 +5,7 @@ Changelog
 ------------------
 
 * Implemented Clean Blog app
+* Implemented Business Casual app
 * Added Wagtail 1.9 support
 * Added Django 1.10 support
 * Removed Wagtail 1.2 support

@@ -27,10 +27,12 @@ Feature list
 ------------
 
 * Clean Blog Pages - based on the `Clean Blog`_ theme by Start Bootstrap
+* Business Casual Pages - based on the `Business Casual`_ theme by Start Bootstrap
 * Outstanding test coverage
 * Continuously integrated codebase
 
-.. _Clean Blog: http://startbootstrap.com/template-overviews/clean-blog/
+.. _Clean Blog: https://startbootstrap.com/template-overviews/clean-blog/
+.. _Business Casual: https://startbootstrap.com/template-overviews/business-casual/
 
 Technical requirements
 ----------------------

@@ -1,0 +1,9 @@
+{% extends "texsitebusinesscasual/base.html" %}
+
+{% load wagtailcore_tags %}
+
+{% block business-casual-body-content %}
+    {% for block in page.body %}
+        {% include_block block %}
+    {% endfor %}
+{% endblock %}

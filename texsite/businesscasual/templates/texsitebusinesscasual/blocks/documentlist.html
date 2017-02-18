@@ -1,0 +1,10 @@
+{% for block in value %}
+    <div class="col-md-4 col-sm-6 col-xs-12">
+        <h4>
+            <a href="link">{{ block.title }}</a>
+            <small>{{ block.created_at|date:"SHORT_DATE_FORMAT" }}</small>
+        </h4>
+    </div>
+{% endfor %}
+
+<div class="clearfix"></div>

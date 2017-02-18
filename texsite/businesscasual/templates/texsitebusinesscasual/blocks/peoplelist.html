@@ -1,0 +1,15 @@
+{% load wagtailimages_tags %}
+
+{% for block in value %}
+    <div class="col-md-3 col-sm-6 text-center">
+        {% image block.image fill-690x460 class="img-responsive" %}
+        <h3>{{ block.name }}
+            {% if block.position %}
+                <br>
+                <small>{{ block.position }}</small>
+            {% endif %}
+        </h3>
+    </div>
+{% endfor %}
+
+<div class="clearfix"></div>

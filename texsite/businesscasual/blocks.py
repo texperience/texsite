@@ -23,3 +23,19 @@ class DocumentsBlock(StructBlock):
     class Meta:
         icon = 'doc-full'
         template = 'texsitebusinesscasual/blocks/documents.html'
+
+
+class PersonBlock(StructBlock):
+    name = CharBlock(required=True)
+    image = ImageChooserBlock(required=True)
+    position = CharBlock(required=False)
+
+
+class PeopleBlock(StructBlock):
+    heading = CharBlock(required=True)
+    paragraph = RichTextBlock(required=False)
+    people = ListBlock(PersonBlock(), template="texsitebusinesscasual/blocks/peoplelist.html")
+
+    class Meta:
+        icon = 'user'
+        template = 'texsitebusinesscasual/blocks/people.html'

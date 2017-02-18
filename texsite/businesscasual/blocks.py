@@ -1,8 +1,21 @@
 # -*- coding: utf-8 -*-
 
-from wagtail.wagtailcore.blocks import CharBlock, ListBlock, RichTextBlock, StructBlock
+from wagtail.wagtailcore.blocks import CharBlock, EmailBlock, ListBlock, RichTextBlock, StructBlock
 from wagtail.wagtaildocs.blocks import DocumentChooserBlock
 from wagtail.wagtailimages.blocks import ImageChooserBlock
+
+
+class ContactBlock(StructBlock):
+    heading = CharBlock(required=True)
+    map = CharBlock(required=False)
+    name = CharBlock(required=True)
+    phone = CharBlock(required=False)
+    mail = EmailBlock(required=False)
+    bank = CharBlock(required=False)
+
+    class Meta:
+        icon = 'site'
+        template = 'texsitebusinesscasual/blocks/contact.html'
 
 
 class ContentBlock(StructBlock):

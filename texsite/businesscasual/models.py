@@ -7,7 +7,7 @@ from wagtail.wagtailcore.fields import StreamField
 
 from texsite.core.models import BasePage
 
-from .blocks import ContentBlock, DocumentsBlock, PeopleBlock
+from .blocks import ContactBlock, ContentBlock, DocumentsBlock, PeopleBlock
 
 
 class BusinessCasualPage(BasePage):
@@ -16,7 +16,8 @@ class BusinessCasualPage(BasePage):
     body = StreamField([
         ('content', ContentBlock()),
         ('documents', DocumentsBlock()),
-        ('people', PeopleBlock())
+        ('people', PeopleBlock()),
+        ('contact', ContactBlock())
     ])
 
     content_panels = BasePage.content_panels + [

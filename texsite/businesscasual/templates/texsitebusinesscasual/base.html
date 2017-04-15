@@ -2,6 +2,7 @@
 
 {% load bootstrap_ui_tags %}
 {% load i18n %}
+{% load menu_tags %}
 {% load static %}
 
 {% block head-css %}
@@ -37,14 +38,9 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <!--
-                    TODO: generate menu
-                    <li>
-                        <a href="/">Title</a>
-                    </li>
-                    -->
-                </ul>
+                {% with handle="main_menu" %}
+                    {% flat_menu handle template="texsitebusinesscasual/menus/"|add:handle|add:".html" %}
+                {% endwith %}
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -59,12 +55,9 @@
         {% container %}
             {% row %}
                 <div class="col-sm-6 text-center">
-                    <p>
-                    <!--
-                    TODO: generate menu
-                        <a href="#">Impressum</a><br>
-                    -->
-                    </p>
+                    {% with handle="footer_menu" %}
+                        {% flat_menu handle template="texsitebusinesscasual/menus/"|add:handle|add:".html" %}
+                    {% endwith %}
                 </div>
                 <div class="col-sm-6 text-center">
                     <p>{% trans "Copyright ©" %} {{ request.site.site_name }} {% now "Y" %}</p>

@@ -1,0 +1,44 @@
+[
+{
+    "pk": 2,
+    "model": "wagtailcore.page",
+    "fields": {
+        "title": "Business Casual page",
+        "numchild": 1,
+        "show_in_menus": true,
+        "live": true,
+        "seo_title": "",
+        "depth": 2,
+        "search_description": "",
+        "content_type": [
+            "texsitebusinesscasual",
+            "businesscasualpage"
+        ],
+        "has_unpublished_changes": false,
+        "owner": null,
+        "path": "00010001",
+        "url_path": "/business-casual-page/",
+        "slug": "business-casual-page"
+    }
+},
+{
+    "pk": 2,
+    "model": "texsitecore.basepage",
+    "fields": {
+        "content_type": [
+            "texsitecore",
+            "basepage"
+        ]
+    }
+},
+{
+    "pk": 2,
+    "model": "texsitebusinesscasual.businesscasualpage",
+    "fields": {
+        "content_type": [
+            "texsitebusinesscasual",
+            "businesscasualpage"
+        ]
+    }
+}
+]

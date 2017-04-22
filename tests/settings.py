@@ -6,18 +6,24 @@ DATABASES = {
 }
 INSTALLED_APPS = [
     # texsite test apps
+    'tests.businesscasual',
     'tests.cleanblog',
     'tests.core',
 
     # texsite apps
+    'texsite.businesscasual',
     'texsite.cleanblog',
     'texsite.core',
 
     # texperience apps
     'bootstrap_ui',
 
+    # Third party apps
+    "wagtailmenus",
+
     # Wagtail apps
     'wagtail.wagtailusers',
+    'wagtail.wagtaildocs',
     'wagtail.wagtailimages',
     'wagtail.wagtailcore',
 
@@ -47,6 +53,7 @@ TEMPLATES = [
                 'django.template.context_processors.static',
                 'django.template.context_processors.tz',
                 'django.contrib.messages.context_processors.messages',
+                "wagtailmenus.context_processors.wagtailmenus",
             ],
         },
     },

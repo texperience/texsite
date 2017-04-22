@@ -53,7 +53,7 @@ TEMPLATES = [
                 'django.template.context_processors.static',
                 'django.template.context_processors.tz',
                 'django.contrib.messages.context_processors.messages',
-                "wagtailmenus.context_processors.wagtailmenus",
+                'wagtailmenus.context_processors.wagtailmenus',
             ],
         },
     },

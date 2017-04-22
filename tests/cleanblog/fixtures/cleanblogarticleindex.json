@@ -4,7 +4,7 @@
     "model": "wagtailcore.page",
     "fields": {
         "title": "Article index page",
-        "numchild": 1,
+        "numchild": 2,
         "show_in_menus": true,
         "live": true,
         "seo_title": "",

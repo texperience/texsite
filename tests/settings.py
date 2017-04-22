@@ -7,6 +7,7 @@ DATABASES = {
 INSTALLED_APPS = [
     # texsite test apps
     'tests.cleanblog',
+    'tests.core',
 
     # texsite apps
     'texsite.cleanblog',

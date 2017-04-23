@@ -5,6 +5,7 @@ Changelog
 -----------------------------------
 
 * Upgraded to django-bootstrap-ui 0.4
+* Moved copyright year for better readability
 
 
 0.1.0 (2017-04-22)

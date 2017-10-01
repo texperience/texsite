@@ -24,6 +24,8 @@ matrix:
       python: 3.4
     - env: TOXENV=py35-dj111-wt110
       python: 3.5
+    - env: TOXENV=py36-dj111-wt110
+      python: 3.6
     - env: TOXENV=flake8
 
 # Package installation

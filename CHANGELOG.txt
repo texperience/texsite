@@ -8,6 +8,7 @@ Changelog
 * Moved copyright year for better readability
 * Added Wagtail 1.10 support
 * Added Django 1.11 support
+* Added Python 3.6 support
 * Removed Wagtail 1.9 support
 * Removed Django 1.9 support
 * Removed Python 3.3 support

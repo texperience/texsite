@@ -6,7 +6,10 @@ Changelog
 
 * Upgraded to django-bootstrap-ui 0.5
 * Moved copyright year for better readability
-
+* Added Wagtail 1.10 support
+* Removed Wagtail 1.9 support
+* Removed Django 1.9 support
+* Removed Python 3.3 support
 
 0.1.0 (2017-04-22)
 ------------------

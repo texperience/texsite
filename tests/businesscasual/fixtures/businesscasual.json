@@ -4,6 +4,7 @@
     "model": "wagtailcore.page",
     "fields": {
         "title": "Business Casual page",
+        "draft_title": "Business Casual page",
         "numchild": 1,
         "show_in_menus": true,
         "live": true,

@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from wagtail.wagtailcore.blocks import CharBlock, EmailBlock, ListBlock, RichTextBlock, StructBlock
-from wagtail.wagtaildocs.blocks import DocumentChooserBlock
-from wagtail.wagtailimages.blocks import ImageChooserBlock
+from wagtail.core.blocks import CharBlock, EmailBlock, ListBlock, RichTextBlock, StructBlock
+from wagtail.documents.blocks import DocumentChooserBlock
+from wagtail.images.blocks import ImageChooserBlock
 
 
 class ContactBlock(StructBlock):

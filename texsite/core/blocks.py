@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from wagtail.wagtailcore.blocks import CharBlock, StructBlock, TextBlock
-from wagtail.wagtailimages.blocks import ImageChooserBlock
+from wagtail.core.blocks import CharBlock, StructBlock, TextBlock
+from wagtail.images.blocks import ImageChooserBlock
 
 
 class HeadingBlock(StructBlock):

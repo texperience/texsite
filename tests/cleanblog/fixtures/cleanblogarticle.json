@@ -4,6 +4,7 @@
     "model": "wagtailcore.page",
     "fields": {
         "title": "Article page",
+        "draft_title": "Article page",
         "numchild": 0,
         "show_in_menus": false,
         "live": true,
@@ -45,6 +46,7 @@
     "model": "wagtailcore.page",
     "fields": {
         "title": "Article page two",
+        "draft_title": "Article page two",
         "numchild": 0,
         "show_in_menus": false,
         "live": true,

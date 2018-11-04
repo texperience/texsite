@@ -2,7 +2,7 @@
 
 from django.utils.translation import ugettext_lazy as _
 
-from wagtail.wagtailcore.models import Page
+from wagtail.core.models import Page
 
 
 class BasePage(Page):

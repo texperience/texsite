@@ -4,14 +4,15 @@ Changelog
 0.2.0 (xxxx-xx-xx) - IN DEVELOPMENT
 -----------------------------------
 
-* Upgraded to django-bootstrap-ui 0.5
 * Moved copyright year for better readability
-* Added Wagtail 1.10 support
+* Added Wagtail 2.3 support
 * Added Django 1.11 support
 * Added Python 3.6 support
+* Upgraded to wagtailmenus 2.10
+* Upgraded to django-bootstrap-ui 0.5
 * Removed Wagtail 1.9 support
-* Removed Django 1.9 support
-* Removed Python 3.3 support
+* Removed Django 1.8, 1.9 and 1.10 support
+* Removed Python 2.7 and 3.3 support
 
 0.1.0 (2017-04-22)
 ------------------

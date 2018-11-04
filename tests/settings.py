@@ -22,10 +22,10 @@ INSTALLED_APPS = [
     "wagtailmenus",
 
     # Wagtail apps
-    'wagtail.wagtailusers',
-    'wagtail.wagtaildocs',
-    'wagtail.wagtailimages',
-    'wagtail.wagtailcore',
+    'wagtail.users',
+    'wagtail.documents',
+    'wagtail.images',
+    'wagtail.core',
 
     # Third party apps
     'taggit',
@@ -36,7 +36,7 @@ INSTALLED_APPS = [
 ]
 MIDDLEWARE_CLASSES = (
   'django.contrib.sessions.middleware.SessionMiddleware',
-  'wagtail.wagtailcore.middleware.SiteMiddleware',
+  'wagtail.core.middleware.SiteMiddleware',
 )
 ROOT_URLCONF = 'tests.urls'
 SECRET_KEY = 'test-key'

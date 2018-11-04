@@ -4,6 +4,7 @@
     "model": "wagtailcore.page",
     "fields": {
         "title": "Article index page",
+        "draft_title": "Article index page",
         "numchild": 2,
         "show_in_menus": true,
         "live": true,

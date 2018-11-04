@@ -3,9 +3,9 @@
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.utils.translation import ugettext_lazy as _
 
-from wagtail.wagtailadmin.edit_handlers import StreamFieldPanel
-from wagtail.wagtailcore.fields import StreamField
-from wagtail.wagtailcore.blocks import RichTextBlock
+from wagtail.admin.edit_handlers import StreamFieldPanel
+from wagtail.core.fields import StreamField
+from wagtail.core.blocks import RichTextBlock
 
 from texsite.core.models import BasePage
 from texsite.core.blocks import HeadingBlock, ImageBlock, IntroBlock, QuoteBlock

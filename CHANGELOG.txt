@@ -4,6 +4,10 @@ Changelog
 1.0.1 (xxxx-xx-xx) - IN DEVELOPMENT
 -----------------------------------
 
+* Released first stable version
+* Added password protection template
+* Moved to 1.0.1 (aka 1.0.0) because of erroneous created tag and irreversible PyPI release
+
 
 0.2.0 (2018-11-04)
 ------------------

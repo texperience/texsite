@@ -1,8 +1,8 @@
 Changelog
 =========
 
-1.0.1 (xxxx-xx-xx) - IN DEVELOPMENT
------------------------------------
+1.0.1 (2018-11-10)
+------------------
 
 * Released first stable version
 * Added password protection template

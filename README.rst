@@ -39,11 +39,11 @@ Technical requirements
 
 Below is the list of currently supported combinations of Wagtail, Django and Python:
 
-+---+---------+--------+---------------+
-| # | Wagtail | Django | Python        |
-+===+=========+========+===============+
-| 1 | 2.3     | 1.11   | 3.4, 3.5, 3.6 |
-+---+---------+--------+---------------+
++---+---------+--------+--------+
+| # | Wagtail | Django | Python |
++===+=========+========+========+
+| 1 | 2.3     | 1.11   | 3.6    |
++---+---------+--------+--------+
 
 Code and contribution
 ---------------------

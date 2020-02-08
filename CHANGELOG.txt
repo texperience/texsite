@@ -4,6 +4,8 @@ Changelog
 Unreleased
 ----------
 
+* Initialise continuous integration with gitlab
+
 
 1.0.1 (2018-11-10)
 ------------------

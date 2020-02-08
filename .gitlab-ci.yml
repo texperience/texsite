@@ -1,0 +1,12 @@
+image: python
+
+stages:
+  - test
+
+before_script:
+  - python --version
+  - pip install tox
+
+flake8:
+  stage: test
+  script: tox -e flake8

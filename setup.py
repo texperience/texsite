@@ -12,6 +12,7 @@ install_requires = [
 testing_extras = [
     'coverage>=4.0.3',
     'flake8>=2.4.1',
+    'tox>=3.14',
 ]
 
 setup(

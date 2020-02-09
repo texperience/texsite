@@ -14,6 +14,7 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 ### Changed
 * Pin testing dependencies according semantic versioning
 * Upgrade direct dependencies wagtailmenus and django-bootstrap-ui
+* Move project to gitlab
 
 ### Removed
 * Remove Python 3.4 and 3.5 support

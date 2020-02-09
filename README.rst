@@ -1,11 +1,11 @@
 Welcome to texsite
 ==================
 
-.. image:: https://img.shields.io/travis/texperience/texsite.svg?branch=master
-    :target: https://travis-ci.org/texperience/texsite
+.. image:: https://gitlab.com/texperience/texsite/badges/master/pipeline.svg
+    :target: https://gitlab.com/texperience/texsite/pipelines
 
-.. image:: https://img.shields.io/coveralls/texperience/texsite/master.svg
-    :target: https://coveralls.io/r/texperience/texsite?branch=master
+.. image:: https://gitlab.com/texperience/texsite/badges/master/coverage.svg
+    :target: https://gitlab.com/texperience/texsite/-/jobs
 
 .. image:: https://img.shields.io/pypi/v/texsite.svg
     :target: https://pypi.python.org/pypi/texsite
@@ -48,10 +48,10 @@ Below is the list of currently supported combinations of Wagtail, Django and Pyt
 Code and contribution
 ---------------------
 
-The code is open source and released under the `ISC License (ISCL)`_. It is available on `GitHub`_ and follows the guidelines about `Semantic Versioning`_ for transparency within the release cycle and backward compatibility whenever possible.
+The code is open source and released under the `ISC License (ISCL)`_. It is available on `Gitlab`_ and follows the guidelines about `Semantic Versioning`_ for transparency within the release cycle and backward compatibility whenever possible.
 
 All contributions are welcome, whether bug reports, code contributions and reviews, documentation or feature requests.
 
 .. _ISC License (ISCL): http://en.wikipedia.org/wiki/ISC_license
 .. _Semantic Versioning: http://semver.org/
-.. _GitHub: https://github.com/texperience/texsite
+.. _Gitlab: https://gitlab.com/texperience/texsite

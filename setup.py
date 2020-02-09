@@ -26,7 +26,7 @@ setup(
         'texsite delivers great and ready-to-use page templates for the modern, flexible and user-focused web content'
         'management system Wagtail CMS backed by the popular Django web framework, both written in Python.',
     long_description=open('README.rst').read(),
-    url='https://github.com/texperience/texsite',
+    url='https://gitlab.com/texperience/texsite',
     author='Timo Rieber',
     author_email='trieber@texperience.de',
     install_requires=install_requires,

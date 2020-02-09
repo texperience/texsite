@@ -5,11 +5,13 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 
 ## [Unreleased]
 ### Added
+* Added Django 2.0 support
 * Initialise continuous integration with gitlab
 * Add coverage output after tests
 
 ### Changed
 * Pin testing dependencies according semantic versioning
+* Upgrade direct dependencies wagtailmenus and django-bootstrap-ui
 
 ### Removed
 * Remove Python 3.4 and 3.5 support

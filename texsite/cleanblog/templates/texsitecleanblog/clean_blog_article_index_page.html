@@ -1,6 +1,5 @@
 {% extends "texsitecleanblog/base.html" %}
 
-{% load bootstrap_ui_tags %}
 {% load i18n %}
 {% load wagtailcore_tags %}
 
@@ -11,8 +10,8 @@
         {% endif %}
     {% endfor %}
 
-    {% container %}
-        {% row %}
+    <div class="container">
+        <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 {% for article in articles %}
                     <div class="post-preview">
@@ -41,6 +40,6 @@
                     {% include "texsitecleanblog/includes/paginator.html" with items=articles only %}
                 {% endif %}
             </div>
-        {% endrow %}
-    {% endcontainer %}
+        </div>
+    </div>
 {% endblock %}

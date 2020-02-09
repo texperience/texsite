@@ -1,6 +1,5 @@
-{% extends "bootstrap_ui/bootstrap-skeleton.html" %}
+{% extends "bootstrap_ui/bootstrap3-skeleton.html" %}
 
-{% load bootstrap_ui_tags %}
 {% load i18n %}
 {% load menu_tags %}
 {% load static %}
@@ -52,8 +51,8 @@
     </div>
 
     <footer>
-        {% container %}
-            {% row %}
+        <div class="container">
+            <div class="row">
                 <div class="col-sm-6 text-center">
                     {% with handle="footer_menu" %}
                         {% flat_menu handle template="texsitebusinesscasual/menus/"|add:handle|add:".html" %}
@@ -62,7 +61,7 @@
                 <div class="col-sm-6 text-center">
                     <p>{% trans "Copyright ©" %} {{ request.site.site_name }} {% now "Y" %}</p>
                 </div>
-            {% endrow %}
-        {% endcontainer %}
+            </div>
+        </div>
     </footer>
 {% endblock %}

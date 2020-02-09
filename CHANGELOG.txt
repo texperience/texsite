@@ -6,6 +6,7 @@ Unreleased
 
 * Initialise continuous integration with gitlab
 * Pin testing dependencies according semantic versioning
+* Add coverage output after tests
 
 
 1.0.1 (2018-11-10)

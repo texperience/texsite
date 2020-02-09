@@ -7,6 +7,7 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 ### Added
 * Added Wagtail 2.7 support
 * Added Django 2.2 support
+* Added Python 3.7 and 3.8 support
 * Initialise continuous integration with gitlab
 * Add coverage output after tests
 

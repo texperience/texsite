@@ -34,10 +34,10 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
 ]
-MIDDLEWARE_CLASSES = (
+MIDDLEWARE = [
   'django.contrib.sessions.middleware.SessionMiddleware',
   'wagtail.core.middleware.SiteMiddleware',
-)
+]
 ROOT_URLCONF = 'tests.urls'
 SECRET_KEY = 'test-key'
 TEMPLATES = [
@@ -55,6 +55,9 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'wagtailmenus.context_processors.wagtailmenus',
             ],
+            'libraries': {
+                'bootstrap_ui_tags': 'bootstrap_ui.templatetags.bootstrap_ui_tags',
+            },
         },
     },
 ]

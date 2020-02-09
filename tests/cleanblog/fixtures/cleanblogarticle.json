@@ -16,7 +16,7 @@
             "cleanblogarticlepage"
         ],
         "has_unpublished_changes": false,
-        "owner": null,
+        "owner": 1,
         "path": "000100010001",
         "url_path": "/article-index-page/article-page/",
         "slug": "article-page"
@@ -58,7 +58,7 @@
             "cleanblogarticlepage"
         ],
         "has_unpublished_changes": false,
-        "owner": null,
+        "owner": 1,
         "path": "000100010002",
         "url_path": "/article-index-page/article-page-two/",
         "slug": "article-page-two"

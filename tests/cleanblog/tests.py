@@ -22,7 +22,7 @@ class CleanBlogTestCase(TexsiteTestCase):
 
 
 class CleanBlogStandaloneArticleIndexPageTest(CleanBlogTestCase):
-    fixtures = ['site.json', 'cleanblogarticleindex.json']
+    fixtures = ['site.json', 'user.json', 'cleanblogarticleindex.json']
 
     def test_article_index_empty_rendered(self):
         self.assertInHTML('<p>No entries found</p>', str(self.article_index_page_response.content))
@@ -40,7 +40,7 @@ class CleanBlogStandaloneArticleIndexPageTest(CleanBlogTestCase):
 
 
 class CleanBlogArticlePageTest(CleanBlogTestCase):
-    fixtures = ['site.json', 'cleanblogarticleindex.json', 'cleanblogarticle.json']
+    fixtures = ['site.json', 'user.json', 'cleanblogarticleindex.json', 'cleanblogarticle.json']
 
     def test_article_index_articles_property_returns_num_child_page(self):
         num_child_pages = CleanBlogArticlePage.objects.live().descendant_of(self.article_index_page).count()

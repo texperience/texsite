@@ -19,7 +19,7 @@ class BusinessCasualTestCase(TexsiteTestCase):
 
 
 class BusinessCasualPageTest(BusinessCasualTestCase):
-    fixtures = ['site.json', 'businesscasual.json']
+    fixtures = ['site.json', 'user.json', 'businesscasual.json']
 
     def test_business_casual_with_minimal_content_rendered(self):
         self.assertInHTML('<div class="brand">Texsite site</div>', str(self.business_casual_page_response.content))

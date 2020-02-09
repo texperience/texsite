@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='CleanBlogArticleIndexPage',
             fields=[
-                ('basepage_ptr', models.OneToOneField(parent_link=True, auto_created=True, primary_key=True, serialize=False, to='texsitecore.BasePage')),
+                ('basepage_ptr', models.OneToOneField(parent_link=True, auto_created=True, primary_key=True, serialize=False, to='texsitecore.BasePage', on_delete=models.CASCADE)),
                 ('body', wagtail.core.fields.StreamField([(b'intro', wagtail.core.blocks.StructBlock([(b'keyvisual', wagtail.images.blocks.ImageChooserBlock(required=False)), (b'slogan', wagtail.core.blocks.CharBlock(required=True))]))])),
             ],
             options={

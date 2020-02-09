@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='BusinessCasualPage',
             fields=[
-                ('basepage_ptr', models.OneToOneField(to='texsitecore.BasePage', primary_key=True, parent_link=True, serialize=False, auto_created=True)),
+                ('basepage_ptr', models.OneToOneField(to='texsitecore.BasePage', primary_key=True, parent_link=True, serialize=False, auto_created=True, on_delete=models.CASCADE)),
                 ('body', wagtail.core.fields.StreamField((('content', wagtail.core.blocks.StructBlock((('heading', wagtail.core.blocks.CharBlock(required=True)), ('image', wagtail.images.blocks.ImageChooserBlock(required=False)), ('paragraph', wagtail.core.blocks.RichTextBlock(required=True))))),))),
             ],
             options={

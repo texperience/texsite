@@ -42,7 +42,7 @@ Below is the list of currently supported combinations of Wagtail, Django and Pyt
 +---+---------+--------+--------+
 | # | Wagtail | Django | Python |
 +===+=========+========+========+
-| 1 | 2.7     | 2.0    | 3.6    |
+| 1 | 2.7     | 2.2    | 3.6    |
 +---+---------+--------+--------+
 
 Code and contribution

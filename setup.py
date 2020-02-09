@@ -3,7 +3,7 @@ from texsite import __version__
 
 # Installation dependencies
 install_requires = [
-    'django>=2.0,<2.1',
+    'django>=2.2,<2.3',
     'django-bootstrap-ui>=1.0,<2.0',
     'wagtail>=2.7,<2.8',
     'wagtailmenus>=3.0,<4.0',
@@ -37,7 +37,7 @@ setup(
         'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
         'Framework :: Django',
-        'Framework :: Django :: 2.0',
+        'Framework :: Django :: 2.2',
         'Framework :: Wagtail',
         'Framework :: Wagtail :: 2',
         'Intended Audience :: Developers',

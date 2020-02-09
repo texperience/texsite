@@ -5,7 +5,7 @@ from texsite import __version__
 install_requires = [
     'django>=2.0,<2.1',
     'django-bootstrap-ui>=1.0,<2.0',
-    'wagtail>=2.3,<2.4',
+    'wagtail>=2.7,<2.8',
     'wagtailmenus>=3.0,<4.0',
 ]
 

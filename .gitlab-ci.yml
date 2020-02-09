@@ -7,7 +7,7 @@ before_script:
   - python --version
   - pip install tox
 
-py36-dj20-wt23:
+py36-dj20-wt27:
   image: python:3.6
   stage: test
-  script: tox -e py36-dj20-wt23
+  script: tox -e py36-dj20-wt27

@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 
 ## [Unreleased]
 ### Added
+* Added Wagtail 2.7 support
 * Added Django 2.0 support
 * Initialise continuous integration with gitlab
 * Add coverage output after tests
@@ -15,6 +16,7 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 
 ### Removed
 * Remove Python 3.4 and 3.5 support
+* Removed Wagtail 2.3 support
 
 ## [1.0.1] - 2018-11-10
 ### Added
